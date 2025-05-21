@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3339385427212864909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5459277123676446227}
+  - component: {fileID: 462428876527917625}
+  - component: {fileID: 2682373523620261936}
+  m_Layer: 0
+  m_Name: AnalyticsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5459277123676446227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339385427212864909}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &462428876527917625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339385427212864909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9ac2df5020da84ca3643faceaa0c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDebugLogEvent: 1
+  gABusinessEventDataMapping:
+  - name: Mini Pack
+    productId: com.hexasort.coin.pack1
+    itemType: coinPack
+    itemId: coinPack1
+    cartType: Shop
+  - name: Small Pack
+    productId: com.hexasort.coin.pack2
+    itemType: coinPack
+    itemId: coinPack2
+    cartType: Shop
+  - name: Medium Pack
+    productId: com.hexasort.coin.pack3
+    itemType: coinPack
+    itemId: coinPack3
+    cartType: Shop
+  - name: Large Pack
+    productId: com.hexasort.coin.pack4
+    itemType: coinPack
+    itemId: coinPack4
+    cartType: Shop
+  - name: Extra Large Pack
+    productId: com.hexasort.coin.pack5
+    itemType: coinPack
+    itemId: coinPack5
+    cartType: Shop
+  - name: Mega Pack
+    productId: com.hexasort.coin.pack6
+    itemType: coinPack
+    itemId: coinPack6
+    cartType: Shop
+  - name: No Ads Pack
+    productId: com.hexasort.no.ads.pack
+    itemType: noAds
+    itemId: noAdsPack
+    cartType: Shop
+  - name: No Ads Bundle
+    productId: com.hexasort.no.ads.bundle
+    itemType: noAds
+    itemId: noAdsBundle
+    cartType: Shop
+  - name: Special Bundle
+    productId: com.hexasort.special.bundle
+    itemType: fixedBundle
+    itemId: specialBundle
+    cartType: Shop
+  - name: Safety Net Offer
+    productId: com.hexasort.safety.net.offer
+    itemType: levelFailOffer
+    itemId: safetyNetOffer
+    cartType: FailScreen
+  - name: Starter Bundle
+    productId: com.hexasort.starter.bundle
+    itemType: fixedOffer
+    itemId: starterBundle
+    cartType: HomeScreen
+  - name: Pawsome Deal
+    productId: com.hexasort.pawsome.deal
+    itemType: fixedOffer
+    itemId: feverBundle
+    cartType: HomeScreen
+--- !u!114 &2682373523620261936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3339385427212864909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f080fbdd70d491f458f2b9419205f0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingType: 0
+  loaded: 0

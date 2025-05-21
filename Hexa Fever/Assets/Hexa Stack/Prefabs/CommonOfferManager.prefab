@@ -1,0 +1,527 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3878712595856010500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1051445063248348991}
+  - component: {fileID: 9051231179561779447}
+  - component: {fileID: 5820846707623346277}
+  m_Layer: 0
+  m_Name: CommonOfferManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1051445063248348991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878712595856010500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9051231179561779447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878712595856010500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65220ad9ca8fd97469dee3075bb68ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: playerPersistantData
+      Entry: 6
+      Data: 
+    - Name: offerData
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Tag.HexaStack.CommonOfferData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 1|Tag.HexaStack.CommonOfferData, Assembly-CSharp
+    - Name: offerId
+      Entry: 3
+      Data: 1
+    - Name: offerName
+      Entry: 1
+      Data: Starter Bundle
+    - Name: iapShopBundleData
+      Entry: 7
+      Data: 2|Tag.HexaStack.IapShopBundleData, Assembly-CSharp
+    - Name: iapString
+      Entry: 1
+      Data: com.hexasort.starter.bundle
+    - Name: rewards
+      Entry: 7
+      Data: 3|Tag.HexaStack.BaseReward[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 4|Tag.HexaStack.InfiniteLifeReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 2
+    - Name: infiniteLifeInSecond
+      Entry: 3
+      Data: 86400
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 1
+    - Name: curruncyValue
+      Entry: 3
+      Data: 250
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: commonOfferUnlockConditions
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[Tag.HexaStack.BaseCommonOfferUnlockConditions,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 7|Tag.HexaStack.SpecificeOfferNotPurchaseUnlockConditions, Assembly-CSharp
+    - Name: specificOfferId
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 8|Tag.HexaStack.CommonOfferData, Assembly-CSharp
+    - Name: offerId
+      Entry: 3
+      Data: 2
+    - Name: offerName
+      Entry: 1
+      Data: Pawsome Deal
+    - Name: iapShopBundleData
+      Entry: 7
+      Data: 9|Tag.HexaStack.IapShopBundleData, Assembly-CSharp
+    - Name: iapString
+      Entry: 1
+      Data: com.hexasort.pawsome.deal
+    - Name: rewards
+      Entry: 7
+      Data: 10|Tag.HexaStack.BaseReward[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 11|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 1
+    - Name: curruncyValue
+      Entry: 3
+      Data: 750
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 12|Tag.HexaStack.InfiniteLifeReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 2
+    - Name: infiniteLifeInSecond
+      Entry: 3
+      Data: 86400
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 13|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 3
+    - Name: curruncyValue
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 14|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 5
+    - Name: curruncyValue
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 15|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 4
+    - Name: curruncyValue
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: commonOfferUnlockConditions
+      Entry: 7
+      Data: 16|Unity.Plastic.Antlr3.Runtime.Misc.ListStack`1[[Tag.HexaStack.BaseCommonOfferUnlockConditions,
+        Assembly-CSharp]], Unity.Plastic.Antlr3.Runtime
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 17|Tag.HexaStack.SpecificeOfferPurchaseUnlockConditions, Assembly-CSharp
+    - Name: specificOfferId
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 18|Tag.HexaStack.SpecificeOfferNotActiveUnlockConditions, Assembly-CSharp
+    - Name: specificOfferId
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 19|Tag.HexaStack.CommonOfferData, Assembly-CSharp
+    - Name: offerId
+      Entry: 3
+      Data: 3
+    - Name: offerName
+      Entry: 1
+      Data: Safety Net Offer
+    - Name: iapShopBundleData
+      Entry: 7
+      Data: 20|Tag.HexaStack.IapShopBundleData, Assembly-CSharp
+    - Name: iapString
+      Entry: 1
+      Data: com.hexasort.safety.net.offer
+    - Name: rewards
+      Entry: 7
+      Data: 21|Tag.HexaStack.BaseReward[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 22|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 1
+    - Name: curruncyValue
+      Entry: 3
+      Data: 300
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 23|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 3
+    - Name: curruncyValue
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 24|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 5
+    - Name: curruncyValue
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 25|Tag.HexaStack.CurrencyReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 4
+    - Name: curruncyValue
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 26|Tag.HexaStack.InfiniteLifeReward, Assembly-CSharp
+    - Name: currencyID
+      Entry: 3
+      Data: 2
+    - Name: infiniteLifeInSecond
+      Entry: 3
+      Data: 7200
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: commonOfferUnlockConditions
+      Entry: 7
+      Data: 27|System.Collections.Generic.List`1[[Tag.HexaStack.BaseCommonOfferUnlockConditions,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: commonOfferRemoteConfigDatas
+      Entry: 7
+      Data: 28|System.Collections.Generic.List`1[[Tag.HexaStack.CommonOfferRemoteConfigData,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 29|Tag.HexaStack.CommonOfferRemoteConfigData, Assembly-CSharp
+    - Name: offerId
+      Entry: 3
+      Data: 1
+    - Name: isActive
+      Entry: 5
+      Data: true
+    - Name: openAt
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 30|Tag.HexaStack.CommonOfferRemoteConfigData, Assembly-CSharp
+    - Name: offerId
+      Entry: 3
+      Data: 2
+    - Name: isActive
+      Entry: 5
+      Data: true
+    - Name: openAt
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: offersView
+      Entry: 7
+      Data: 31|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Tag.HexaStack.CommonOfferView,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 32|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: offersButton
+      Entry: 7
+      Data: 33|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[Tag.HexaStack.CommonOfferButton,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 34|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  offerConfigDataSO: {fileID: 11400000, guid: bb6a8ad4122d9b74ca469c4abfbb6eb1, type: 2}
+--- !u!114 &5820846707623346277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878712595856010500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f080fbdd70d491f458f2b9419205f0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingType: 0
+  loaded: 0

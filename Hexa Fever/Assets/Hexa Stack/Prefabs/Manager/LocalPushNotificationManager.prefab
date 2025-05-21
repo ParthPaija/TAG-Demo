@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7698404739305577160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4625545862222777553}
+  - component: {fileID: 94198921371933648}
+  - component: {fileID: 3966004321449928286}
+  m_Layer: 0
+  m_Name: LocalPushNotificationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4625545862222777553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698404739305577160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &94198921371933648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698404739305577160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3199bc2d719ae748bbcac1742706ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: localNotifications
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Tag.HexaStack.BaseLocalNotification,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 1|Tag.HexaStack.EnergyFullNotify, Assembly-CSharp
+    - Name: channelId
+      Entry: 1
+      Data: HexaFever
+    - Name: notificationData
+      Entry: 7
+      Data: 2|NotificationData, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: "All Lives restored \u2764\uFE0F"
+    - Name: text
+      Entry: 1
+      Data: "\U0001F9E9 The board is set, your lives are full\u2014let the sorting
+        begin!"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|Tag.HexaStack.UserGoneNotify, Assembly-CSharp
+    - Name: channelId
+      Entry: 1
+      Data: HexaFever
+    - Name: notificationData
+      Entry: 7
+      Data: 4|RendomTextNotificationData, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Bright start
+    - Name: text
+      Entry: 1
+      Data: "\U0001F305 Hexa-citing morning! Ready to stack some tiles? \U0001F6E0\uFE0F"
+    - Name: textList
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\U0001F305 Hexa-citing morning! Ready to stack some tiles? \U0001F6E0\uFE0F"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F31F Morning vibes, matching lives! Kickstart your day with Hexa
+        Sort! \U0001F9E9"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F558 New puzzles are here! Can you complete the hex-tastic challenge?
+        \U0001F3AF"
+    - Name: 
+      Entry: 1
+      Data: "\u2615 Coffee and Hexa Fever \u2013 the perfect morning combo! \u2600\uFE0F"
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: time
+      Entry: 3
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|Tag.HexaStack.UserGoneNotify, Assembly-CSharp
+    - Name: channelId
+      Entry: 1
+      Data: HexaFever
+    - Name: notificationData
+      Entry: 7
+      Data: 7|RendomTextNotificationData, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Midday break
+    - Name: text
+      Entry: 1
+      Data: "\U0001F31E It\u2019s Hexa time! Take a break and solve some puzzles!
+        \u23F0"
+    - Name: textList
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\U0001F31E It\u2019s Hexa time! Take a break and solve some puzzles!
+        \u23F0"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F9E9 Lunch break? Make it fun with some hexa-stacking! \U0001F374"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F389 The tiles are waiting! Can you keep the stacks rolling? \U0001F680"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F308 Noon challenge unlocked! Match, stack, and relax! \U0001F31F"
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: time
+      Entry: 3
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 9|Tag.HexaStack.UserGoneNotify, Assembly-CSharp
+    - Name: channelId
+      Entry: 1
+      Data: HexaFever
+    - Name: notificationData
+      Entry: 7
+      Data: 10|RendomTextNotificationData, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Relax after work
+    - Name: text
+      Entry: 1
+      Data: "\U0001F554 After-work chill session! Let\u2019s sort some tiles! \U0001F6CB\uFE0F"
+    - Name: textList
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\U0001F554 After-work chill session! Let\u2019s sort some tiles! \U0001F6CB\uFE0F"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F9E9 Hexa Sort is calling! Ready for the evening fun? \U0001F305"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F31F Beat the evening blues with colorful tiles! Let\u2019s play!
+        \U0001F4A5"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F308 Stacks of fun await! Complete puzzles and relax tonight!
+        \U0001F320"
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: time
+      Entry: 3
+      Data: 17
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 12|Tag.HexaStack.UserGoneNotify, Assembly-CSharp
+    - Name: channelId
+      Entry: 1
+      Data: HexaFever
+    - Name: notificationData
+      Entry: 7
+      Data: 13|RendomTextNotificationData, Assembly-CSharp
+    - Name: title
+      Entry: 1
+      Data: Unwind and finish
+    - Name: text
+      Entry: 1
+      Data: "\U0001F319 Nighttime hexa magic! End your day with a puzzle win! \u2728"
+    - Name: textList
+      Entry: 7
+      Data: 14|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 1
+      Data: "\U0001F319 Nighttime hexa magic! End your day with a puzzle win! \u2728"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F6CF\uFE0F Sweet dreams start with sweet stacks! Play now! \U0001F9E9"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F31F Final challenge of the day! Complete your day with perfect
+        stacks? \U0001F30C"
+    - Name: 
+      Entry: 1
+      Data: "\U0001F308 Before bed, stack ahead! Play Hexa Fever and unwind! \U0001F31C "
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: time
+      Entry: 3
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &3966004321449928286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7698404739305577160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f080fbdd70d491f458f2b9419205f0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingType: 0
+  loaded: 0
