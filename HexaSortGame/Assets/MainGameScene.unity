@@ -1,0 +1,520 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPackageVersion: 1
+  m_LightmapSettings: {fileID: 0}
+  m_RenderSettings: {fileID: 0}
+  m_FogSettings: {fileID: 0}
+  m_HaloSettings: {fileID: 0}
+  m_FlareSettings: {fileID: 0}
+  m_SkyboxSettings: {fileID: 0}
+  m_LightmapEditorSettings: {fileID: 0}
+  m_LightmappingDataAsset: {fileID: 0}
+  m_NavMeshSettings: {fileID: 0}
+  m_OcclusionCullingSettings: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 876898804} 
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!127 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_AO: 0 # ... (rest of LightmapSettings as before)
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2 # ... (rest of NavMeshSettings as before)
+--- !u!1 &1671083469 # Main Camera GameObject
+GameObject:
+  m_ObjectHideFlags: 0 # ... (rest of Main Camera GameObject as before)
+  m_Name: Main Camera
+--- !u!20 &1671083470 # Camera Component
+Camera:
+  m_ObjectHideFlags: 0 # ... (rest of Camera Component as before)
+--- !u!4 &1671083471 # Transform for Main Camera
+Transform:
+  m_ObjectHideFlags: 0 # ... (rest of Main Camera Transform as before)
+--- !u!1 &876898804 # Directional Light GameObject
+GameObject:
+  m_ObjectHideFlags: 0 # ... (rest of Directional Light GameObject as before)
+  m_Name: Directional Light
+--- !u!108 &876898805 # Light Component
+Light:
+  m_ObjectHideFlags: 0 # ... (rest of Light Component as before)
+--- !u!4 &876898806 # Transform for Directional Light
+Transform:
+  m_ObjectHideFlags: 0 # ... (rest of Directional Light Transform as before)
+--- !u!1 &20000000 # GridManager GameObject
+GameObject:
+  m_ObjectHideFlags: 0 # ... (rest of GridManager GameObject as before)
+  m_Name: GridManager
+--- !u!4 &20000002 # Transform for GridManager
+Transform:
+  m_ObjectHideFlags: 0 # ... (rest of GridManager Transform as before)
+--- !u!114 &20000004 # HexGridGenerator Component on GridManager
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20000000} 
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b1c2d3e4a5b6c7d8e9f0a1b2c3d4e5, type: 3} 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridWidth: 5
+  gridHeight: 5
+  hexagonPrefab: {fileID: 100100000, guid: e1f67f53a91b48d4a8a9f0b8b8b8b8b8, type: 2} 
+  horizontalSpacing: 1
+  verticalSpacing: 0.866
+  availableColors: 
+  - {r: 1, g: 0, b: 0, a: 1} 
+  - {r: 0, g: 1, b: 0, a: 1} 
+  - {r: 0, g: 0, b: 1, a: 1} 
+  - {r: 1, g: 0.920000017, b: 0.0160000007, a: 1} 
+  movesText: {fileID: 30000026} # Link to MovesText Text Component
+--- !u!1 &30000000 # EventSystem GameObject
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30000002}
+  - component: {fileID: 30000004}
+  - component: {fileID: 30000006}
+  m_Layer: 5 # UI Layer
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!4 &30000002 # Transform for EventSystem
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3 # New root object
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!46 &30000004 # EventSystem Component
+EventSystem:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000000}
+  m_Enabled: 1
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!47 &30000006 # StandaloneInputModule Component
+StandaloneInputModule:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000000}
+  m_Enabled: 1
+  m_ForceModuleActive: 0
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputOverride: {fileID: 0}
+  m_AllowActivationOnMobileDevice: 0
+--- !u!1 &30000010 # GameUICanvas GameObject
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30000012}
+  - component: {fileID: 30000014}
+  - component: {fileID: 30000016}
+  - component: {fileID: 30000018}
+  m_Layer: 5 # UI Layer
+  m_Name: GameUICanvas
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!224 &30000012 # RectTransform for GameUICanvas
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000010}
+  m_Enabled: 1
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 30000022} # MovesText RectTransform
+  - {fileID: 30000032} # ResetButton RectTransform
+  m_Father: {fileID: 0}
+  m_RootOrder: 4 # New root object
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &30000014 # Canvas Component
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000010}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0 # Screen Space - Overlay
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!223 &30000016 # CanvasScaler Component
+CanvasScaler:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000010}
+  m_Enabled: 1
+  m_UiScaleMode: 1 # Scale With Screen Size
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0 # Match Width Or Height
+  m_MatchWidthOrHeight: 0.5 # Halfway
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!221 &30000018 # GraphicRaycaster Component
+GraphicRaycaster:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000010}
+  m_Enabled: 1
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1 &30000020 # MovesText GameObject
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30000022}
+  - component: {fileID: 30000024}
+  - component: {fileID: 30000026}
+  m_Layer: 5 # UI Layer
+  m_Name: MovesText
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!224 &30000022 # RectTransform for MovesText
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000020}
+  m_Enabled: 1
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0} # Will be adjusted by anchors
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 30000012} # Parent is GameUICanvas RectTransform
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1} # Top-Left
+  m_AnchorMax: {x: 0, y: 1} # Top-Left
+  m_AnchoredPosition: {x: 100, y: -30} # Position: X=100 from left, Y=-30 from top
+  m_SizeDelta: {x: 160, y: 30} # Width=160, Height=30
+  m_Pivot: {x: 0, y: 1} # Pivot at top-left of this element
+--- !u!220 &30000024 # CanvasRenderer for MovesText
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000020}
+  m_Enabled: 1
+  m_CullTransparentMesh: 1
+--- !u!111 &30000026 # Text Component for MovesText
+Text:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000020}
+  m_Enabled: 1
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0} # Default Arial
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0 # Left
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0 # Wrap
+    m_VerticalOverflow: 0 # Truncate
+    m_LineSpacing: 1
+  m_Text: 'Moves: 0'
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1} # Default dark gray
+  m_Material: {fileID: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!1 &30000030 # ResetButton GameObject
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30000032}
+  - component: {fileID: 30000034}
+  - component: {fileID: 30000036}
+  - component: {fileID: 30000038}
+  m_Layer: 5 # UI Layer
+  m_Name: ResetButton
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!224 &30000032 # RectTransform for ResetButton
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000030}
+  m_Enabled: 1
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: 
+  - {fileID: 30000042} # ResetButton_Text RectTransform
+  m_Father: {fileID: 30000012} # Parent is GameUICanvas RectTransform
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1} # Top-Right
+  m_AnchorMax: {x: 1, y: 1} # Top-Right
+  m_AnchoredPosition: {x: -100, y: -30} # Position: X=-100 from right, Y=-30 from top
+  m_SizeDelta: {x: 160, y: 30} # Width=160, Height=30
+  m_Pivot: {x: 1, y: 1} # Pivot at top-right of this element
+--- !u!220 &30000034 # CanvasRenderer for ResetButton
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000030}
+  m_Enabled: 1
+--- !u!109 &30000036 # Image Component for ResetButton
+Image:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000030}
+  m_Enabled: 1
+  m_Sprite: {fileID: 10006, guid: 0000000000000000e000000000000000, type: 0} # Default UI Sprite
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Material: {fileID: 0}
+  m_RaycastTarget: 1
+  m_Type: 1 # Sliced
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+  m_Maskable: 1
+  m_IsOrthographic: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!110 &30000038 # Button Component for ResetButton
+Button:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000030}
+  m_Enabled: 1
+  m_Interactable: 1
+  m_Transition: 1 # Color Tint
+  m_TargetGraphic: {fileID: 30000036} # Image component of this button
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.960784316, g: 0.960784316, b: 0.960784316, a: 1}
+    m_PressedColor: {r: 0.784313738, g: 0.784313738, b: 0.784313738, a: 1}
+    m_SelectedColor: {r: 0.960784316, g: 0.960784316, b: 0.960784316, a: 1}
+    m_DisabledColor: {r: 0.784313738, g: 0.784313738, b: 0.784313738, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers: {}
+  m_Navigation:
+    m_Mode: 3 # Explicit
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 20000000} # GridManager GameObject
+        m_TargetAssemblyTypeName: UnityEngine.GameObject
+        m_MethodName: SendMessage
+        m_Mode: 1 # String
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ResetGame # Method to call
+          m_BoolArgument: 0
+        m_CallState: 2 # Editor and Runtime
+--- !u!1 &30000040 # ResetButton_Text Child GameObject
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30000042}
+  - component: {fileID: 30000044}
+  - component: {fileID: 30000046}
+  m_Layer: 5 # UI Layer
+  m_Name: Text
+  m_TagString: Untagged
+  m_IsActive: 1
+--- !u!224 &30000042 # RectTransform for ResetButton_Text
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000040}
+  m_Enabled: 1
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 30000032} # Parent is ResetButton RectTransform
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0} # Fill parent
+  m_AnchorMax: {x: 1, y: 1} # Fill parent
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0} # No size delta, fill parent
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!220 &30000044 # CanvasRenderer for ResetButton_Text
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000040}
+  m_Enabled: 1
+--- !u!111 &30000046 # Text Component for ResetButton_Text
+Text:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30000040}
+  m_Enabled: 1
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0} # Default Arial
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4 # Middle Center
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Reset
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Material: {fileID: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
